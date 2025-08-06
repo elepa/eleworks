@@ -2,23 +2,24 @@
 :root {
    
   --second-color: rgb(167, 167, 167);
-  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  /* --second-alpha-color: rgba(20, 25, 45, 0.75); */
   --white-color: rgb(255, 255, 255);
-  --semititle-color:rgb(28, 182, 152);
+  --semititle-color: rgb(167, 237, 246);
   --gray-light-color: rgb(243, 243, 243);
   --gray-color: rgb(204, 204, 204);
   --gray-dark-color: rgb(102, 102, 102);
   --black-color: rgb(0, 0, 0);
-  --link-color: rgb(80, 158, 227);
   --title-color: rgb(51, 51, 51);
   --text-color: rgb(34, 34, 34);
   --white-alpha-color: rgba(255, 255, 255, 0.679);
   --black-alpha-color: rgba(0, 0, 0, 0.371);
   --background-color: rgb(30,35,38);
-  --font: "Times New Roman", sans-serif;
+  /* --font: "Times New Roman", sans-serif; */
+  --font: "Georgia";
   --max-width: 1200px;
   --header-height: 4rem;
 }
+
 *{
     box-sizing: border-box;
     font-family: var(--font);
@@ -54,7 +55,7 @@ body {
 }
 .contenedor-header header .nav{
     margin-right: 20px;
-    background-color: rgb(207, 250, 242);
+    background-color: var(--semititle-color); 
     
 }
 .contenedor-header header ul{
@@ -70,7 +71,7 @@ body {
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-     color:var(--semititle-color);*/
+     color:var(--semititle-color);
    
 }
 .nav-responsive{
@@ -87,6 +88,7 @@ body {
     background-color: var(--gray-light-color);
     color: var(--black-color);
     padding: 50px 20px;
+    padding-top: 150px;
 }
 .inicio .contenido-seccion{
    max-width: 1100px;
@@ -113,6 +115,7 @@ body {
 .inicio .fila .col .der{
     width: 59%;
     background-color: var(--gray-light-color);
+    
 }
 .inicio .fila .itemizq{
     padding: 25px;
@@ -122,13 +125,15 @@ body {
 }
 .inicio .fila .itemder{
     width: 500px;
-    height: 300px;
+    height: 200px;
     padding: 50px;
     margin-bottom: 30px;
-    background-color: rgb(207, 250, 242);
+    margin-top: 50px;
+    background-color: var(--semititle-color);
     position: relative;
-    border-radius: 10px 100px / 120px;
-}
+    border-radius: 50px 1000px / 150px;
+    /* border-radius: 10px 100px / 120px; */
+} 
 .inicio .fila .itemder h3{
     padding: 10px;
     font-size: 30px;
@@ -299,6 +304,7 @@ body {
     font-size: 28px;
     font-family: var(--font);
     margin-bottom: 25px;
+    padding:50px;
 }
 
 .curriculum .fila .item{
@@ -376,16 +382,19 @@ body {
     background-color: var(--gray-light-color);
     color: var(--black-color);
     padding: 50px 20px;
+    padding-bottom: 180px;
 }
 .skills .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+    margin-:150px;
 }
 .skills h2{
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
+    margin-bottom: 50px;
 
 }
 .skills .fila{
@@ -396,6 +405,19 @@ body {
     padding: 0 20px;
 }
 .skills .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.skills .fila2{
+    margin-top: 30px;;
+    display: flex;
+}
+.skills .fila2 .col{
+    width: 80%;
+    padding: 0 20px;
+}
+.skills .fila2 .col h3{
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
@@ -413,7 +435,7 @@ body {
     margin-bottom: 30px;
 }
 .skills .skill .progreso{
-    background-color: #1CB698;
+    background-color: var(--semititle-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -423,7 +445,7 @@ body {
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #1CB698;
+    background-color:var(--semititle-color);
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -462,8 +484,10 @@ body {
   
 }
 .portfolio .galeria .proyecto img{
-    width: 100%;
+    width: 300px;
+    height: 300px;
     display: block;
+    object-fit:contain;
 }
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
@@ -471,7 +495,7 @@ body {
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    background: linear-gradient(var(--semititle-color), var(--semititle-color));
     display: flex;
     flex-direction: column;
     justify-content: center;
