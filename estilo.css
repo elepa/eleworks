@@ -477,6 +477,40 @@ h1, h2, h3 {
     right: -15px;
     font-size: 14px;
 }
+.skills-grid {
+  max-width: 800px;
+  font-family: sans-serif;
+}
+
+/* Cada Fila */
+.skill-row {
+  display: flex;       /* Activa Flexbox */
+  margin-bottom: 15px; /* Espacio entre filas */
+}
+
+/* Cada Celda (La clave de la alineación) */
+.skill-cell {
+  display: flex;       /* Alinea icono y texto internamente */
+  align-items: center; /* Centra verticalmente */
+  flex: 0 0 33.33%;    /* Fuerza a que cada celda ocupe exactamente un tercio */
+  box-sizing: border-box;
+}
+
+/* Caja para el icono (para que el texto siempre empiece igual) */
+.skill-cell img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;  /* Espacio entre logo y nombre */
+  flex-shrink: 0;      /* Que no se deforme el logo */
+}
+
+/* Estilo del texto */
+.skill-name {
+  font-style: normal;
+  font-size: 14px;
+  color: #334155;
+  white-space: nowrap; /* Evita que el texto salte de línea */
+}
 
 	
 	
