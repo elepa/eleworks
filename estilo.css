@@ -477,6 +477,12 @@ h1, h2, h3 {
     right: -15px;
     font-size: 14px;
 }
+.imgavatar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+	
+	
 /* SECCION PORTFOLIO */
 .portfolio{
     background-color: var(--gray-light-color);
