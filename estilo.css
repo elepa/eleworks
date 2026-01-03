@@ -479,8 +479,10 @@ h1, h2, h3 {
 }
 .imgavatar{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding:5px;
+  margin:5px;
 	
 	
 /* SECCION PORTFOLIO */
