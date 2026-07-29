@@ -19,11 +19,11 @@
         <header>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">Tecnologias</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">Proyectos</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li> 
+                    <li><a href="#inicio" >Inicio</a></li>
+                    <li><a href="#curriculum" >Curriculum</a></li>
+                    <li><a href="#skills" >Tecnologias</a></li>
+                    <li><a href="#portfolio" >Proyectos</a></li>
+                    <li><a href="#contacto" >Contacto</a></li> 
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -33,465 +33,709 @@
     </div>
     
     <!-- SECCION INICIO -->
-    <section id="inicio" >
+    <section class="inicio"  id="inicio">
         <div class="contenido-seccion">
-           
             <div class="fila">
-              
                 <div class="col izquierda izq">
                    <div class="itemder">
                         <h3>Elena Paz Alvarez </h3>
-                        <h4>Front-end & Software Developer</h4>
+                        <h4>Software Engineer</h4>
+                        
                     </div>
                 </div>
-              
             </div>
-           
         </div>
     </section>
 
     <!-- SECCION CURRICULUM -->
     <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum Vitae</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Herramientas utilizadas</h3>
-                   <div class="item izq">
-                        <span class="casa"> Html5 Css Figma VisualStudioCode Git/GitHub     
-                        </span>
-                        <span class="casa"> VisualStudio Swagger  Postman
-                         SQLServer Angular16 Node js
-                        </span>
-                        <span class="fecha"></span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                       
+    <div class="contenido-seccion">
+        <h2>Curriculum Vitae</h2>
+        <div class="fila">
+            
+            <!-- COLUMNA IZQUIERDA: HERRAMIENTAS -->
+            <div class="col izquierda">
+                <h3>Herramientas</h3>
+                
+                <!-- Item 1 Izq -->
+                <div class="item izq">
+                    <span class="tech-category">Frontend & Tools</span>
+                    <div class="tech-tags-container">
+                        <span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">Angular16</span><span class="tech-tag">Git</span>
                     </div>
-                    <div class="item izq" style="padding: 25px;">
-                      <span class="casa"> Html5 Css3 Angular 2/4</span>
-                        <span class="casa">Php Mysql Apache </span>
-                        <span class="fecha"></span>
-                         <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
+                    <span class="tech-category">Backend & API</span>
+                    <div class="tech-tags-container">
+                      <span class="tech-tag">Node.js</span><span class="tech-tag">SQLServer</span><span class="tech-tag">Swagger</span><span class="tech-tag">Postman</span><span class="tech-tag">Karma Jasmine</span>
                     </div>
-                    
-                    <div class="item izq">
-                         
-                        <span class="casa">Tecnologia MVS IBM/390</span>
-                         <span class="casa">Cobol Cics Db2 Informix Microfocus Unix
-                        Entornos  Online/ Batch 
-                         </span>
-                        <span class="fecha"></span>
-                       
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                       <div class="item izq" style="padding: 25px;">
-                        <span class="casa"> Mainframe Express Testlink </span>
-                         <span class="casa"> Intertest / Expediter / Unit Test </span>
-                        <span class="fecha"></span>
-                    
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
+                    <div class="conectori"><div class="circuloi"></div></div>
                 </div>
 
-                <div class="col derecha">
-                    <h3>Experiencia </h3>
-                   <div class="item der" style="padding: 10px;">
-                        <h4>Front-end Developer</h4>
-                         <span class="casa">App cursos de formación </span>
-                         <span class="fecha"></span>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                        
+                <!-- Item 2 Izq -->
+                <div class="item izq">
+                    <span class="tech-category">Web Stack</span>
+                    <div class="tech-tags-container">
+                        <span class="tech-tag">Angular</span><span class="tech-tag">JavaScript TypeScript Figma</span>
                     </div>
-                    <div class="item der" style="padding: 16px;">
-                        <h4>Full Stack Developer </h4>
-                        <span class="casa">App de Tasaciones</span>
-                        <span class="fecha"></span>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                        
+                    <span class="tech-category">ServerStack</span>
+                    <div class="tech-tags-container">
+                        <span class="tech-tag">PHP</span><span class="tech-tag">MySQL</span><span class="tech-tag">Apache</span>
                     </div>
-                    
-                    <div class="item der" style="padding: 16px;">
-                         <h4>Analista Programador</h4>
-                        <span class="casa">Banca, Seguros e Industria</span>
-                      
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der" style="padding: 16px;">
-                        <h4>Analista Tester</h4>
-                        <span class="casa">Cobol  Java</span>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- SECCION SKILLS -->
-<section class="skills" id="skills">
-  <div class="contenido-seccion">
-      <h2>Tecnologias</h2>
-      <div class="fila">
-          <!-- Technical Skill -->
-          <div class="col">
-           <div class="skills-grid">
-              <h3>Frontend End Skills</h3>
-            
-              <!-- FILA 1: -->
-              <div class="skill-row">
-                <div class="skill-cell">
-                  <img class="avatar" src="img/js.jpg" alt="js" />
-                  <i class="skill-name">Javascript</i>
-                </div>
-                <div class="skill-cell">
-                  <img class="avatar" src="img/html5.png" alt="html" />
-                  <i class="skill-name">Html</i>
-                </div>
-                <div class="skill-cell">
-                  <img class="avatar" src="img/css3.png" alt="css" />
-                  <i class="skill-name">Css</i>
-                </div>
-              </div>
-            
-              <!-- FILA 2 -->
-              <div class="skill-row">
-                <div class="skill-cell">
-                  <img class="avatar" src="img/bootstrap.png" alt="bs" />
-                  <i class="skill-name">Bootstrap</i>
-                </div>
-                <div class="skill-cell">
-                  <img class="avatar" src="img/angularmaterial.png" alt="am" />
-                  <i class="skill-name">Material</i>
-                </div>
-                <div class="skill-cell">
-                  <img class="avatar" src="img/tailwind.png" alt="tw" />
-                  <i class="skill-name">Tailwind</i>
-                </div>
-              </div>
-            
-              <!-- FILA 3: -->
-              <div class="skill-row">
-                <div class="skill-cell">
-                  <img class="avatar" src="img/angular.png" alt="ang" />
-                  <i class="skill-name">Angular</i>
-                </div>
-                <div class="skill-cell">
-                  <img class="avatar" src="img/react.png" alt="react" />
-                  <i class="skill-name">React js</i>
-                </div>
-                <div class="skill-cell">
-                  <!-- Celda vacía para mantener la alineación -->
-                </div>
-              </div>
-            </div>
-  
-         </div>
-          <!-- Professional Skills -->
-          <div class="col">
-              <h3>Back End Skills</h3>
-              <div class="skill">
-                  <span>
-                      <img class="avatar" src="img/php.png" alt="php"/><i> Php</i>
-                  </span>
-                  
-              </div>
-              <div class="skill">
-                  <span>
-                    <img class="avatar" style ="max-width: 40px" src="img/ibm.png" alt="IBM" /><i> Cobol Mainframe IBM390</i>
-                  </span>
-                  <span><img class="avatar" src="img/db21.png" alt="DB2" /> <i>Db2 - Informix</i></span>
-              </div>
-              <div class="skill">
-                  <span>
-                   <img class="avatar" style ="max-width: 40px" src="img/node.png" alt="node" /><i> Node JS</i>
-                  </span>
-              </div>
-              <div class="skill">
-                  <span>
-                   <img class="avatar" src="img/mysqln.png" alt="Mysql" /><i>Mysql</i> </span>
-                  <span><img class="avatar" src="img/sql.png" alt="Mysql" /> <i> Sql server</i></span>
-             </div>
-           </div>
-      </div>
-  
-      <div class="fila2">    
-        <div class="col">
-                <h3>Cursos</h3>
-                <div class="skill">
-                    <span>
-                        <p>SSCE0110 Docente de Formacion Profesional</p>
-                         <p>Angular Building Aplications</p>
-                         <p>Docker esencial</p>
-                         <p>Kubernetes esencial</p>
-                         <p>ApiRest</p>
-                        
-                    </span>
+                    <div class="conectori"><div class="circuloi"></div></div>
                 </div>
                 
+                <!-- Item 3 Izq -->
+                <div class="item izq">
+                    <span class="tech-category">Sistemas & Core</span>
+                    <div class="tech-tags-container">
+                        <span class="tech-tag">MVS IBM/390,</span><span class="tech-tag">Unix,Microfocus,</span><span class="tech-tag">COBOL,</span><span class="tech-tag">CICS,</span><span class="tech-tag">DB2,</span><span class="tech-tag">Informix,</span>
+                    <span class="tech-tag">SQLServer,</span></div>
+                    <div class="conectori"><div class="circuloi"></div></div>
+                </div>
+
+                <!-- Item 4 Izq -->
+                <div class="item izq">
+                    <span class="tech-category">Testing & QA</span>
+                    <div class="tech-tags-container">
+                        <span class="tech-tag">MainframeExpress</span><span class="tech-tag">Testlink</span><span class="tech-tag">Intertest/Expediter,</span><span class="tech-tag">Unit Test</span>
+                    </div>
+                    <div class="conectori"><div class="circuloi"></div></div>
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA: EXPERIENCIA -->
+            <div class="col derecha">
+                <h3>Experiencia</h3>
+                
+                <!-- Item 1 Der -->
+                <div class="item der">
+                    <h4>Front-end Developer</h4>
+                    <span class="casa">App cursos de formación</span>
+                     <span class="role-desc">Desarrollo responsive CSS Optimización de rendimiento en componentes de UI</span>
+
+                    <!-- <span class="role-desc">Desarrollo de interfaces y maquetación web</span> -->
+                    <div class="conectord"><div class="circulod"></div></div>
+                </div>
+                
+                <!-- Item 2 Der -->
+                <div class="item der">
+                    <h4>Full Stack Developer</h4>
+                    <span class="casa">App de Tasaciones</span>
+                    <span class="role-desc">Mantenimiento evolutivo</span>
+                    <div class="conectord"><div class="circulod"></div></div>
+                </div>
+                
+                <!-- Item 3 Der -->
+                <div class="item der">
+                    <h4>Analista Programador</h4>
+                    <span class="casa">Banca, Seguros e Industria</span>
+                    <span class="role-desc">Desarrollo de lógica de negocio y sistemas</span>
+                    <div class="conectord"><div class="circulod"></div></div>
+                </div>
+
+                <!-- Item 4 Der -->
+                <div class="item der">
+                    <h4>Analista Tester</h4>
+                    <span class="casa">Entornos Cobol / Java</span>
+                    <span class="role-desc">Pruebas unitarias integradas y control de calidad</span>
+                    <div class="conectord"><div class="circulod"></div></div>
+                </div>
+            </div>
+
         </div>
-      </div>
-</section>
+    </div>
+    </section>
+<!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2 class="titulo-principal">Tecnologías</h2>
+        
+        <div class="fila">
+            <!-- BLOQUE IZQUIERDA: FRONTEND SKILLS -->
+            <div class="col">
+                <h3>Frontend Skills</h3>
+                <div class="skills-grid-new">
+                    
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/js.jpg" alt="JavaScript" />
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/html5.png" alt="HTML5" />
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/css3.png" alt="CSS3" />
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/bootstrap.png" alt="Bootstrap" />
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/angularmaterial.png" alt="Material" />
+                        <span>Material</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/tailwind.png" alt="Tailwind CSS" />
+                        <span>Tailwind</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/angular.png" alt="Angular" />
+                        <span>Angular</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/react.png" alt="React JS" />
+                        <span>React JS</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- BLOQUE DERECHA: BACKEND SKILLS (Equilibrado con el mismo diseño) -->
+            <div class="col">
+                <h3>Backend Skills</h3>
+                <div class="skills-grid-new">
+                    
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/node.png" alt="Node.js" />
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/php.png" alt="PHP" />
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/mysqln.png" alt="MySQL" />
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/sql.png" alt="SQL Server" />
+                        <span>SQL Server</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/db21.png" alt="DB2" />
+                        <span>DB2</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/db21.png" alt="Informix" />
+                        <span>Informix</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/ibm.png" alt="COBOL" />
+                        <span>COBOL</span>
+                    </div>
+                    <div class="skill-item-new">
+                        <img class="avatar-new" src="img/ibm.png" alt="MVS" />
+                        <span>MVS / IBM390</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+            
+    <div class="fila2">    
+        <div class="col">
+            <h3>Cursos y Certificaciones</h3>
+            
+            <div class="courses-grid">
+                
+                <!-- Bloque Docencia -->
+                <div class="course-row">
+                    <span class="category course-line">Docencia:</span>
+                    <span class="details">SSCE0110 Formación Profesional 2025</span>
+                </div>
+                
+                <!-- Bloque Frontend (El segundo queda vacío a la izquierda) -->
+                <div class="course-row">
+                    <span class="category course-line">Frontend:</span>
+                    <span class="details">Angular Building Large Applications 2025</span>
+                </div>
+                <div class="course-row">
+                    <span class="category"></span> <!-- Vacío: mantiene alineación sin repetir texto -->
+                    <span class="details">JavaScript: TDD y pruebas unitarias avanzado 2026</span>
+                </div>
+                <div class="course-row">
+                    <span class="category course-line">Frontend:</span>
+                    <span class="details">Testing and Debugging Applications 2025</span>
+                </div>
+                <div class="course-row">
+                    <span class="category"></span> <!-- Vacío: mantiene alineación sin repetir texto -->
+                    <span class="details">Frameworks Frontend 2025</span>
+                </div>
+                
+                <!-- Bloque Arquitectura -->
+                <div class="course-row">
+                    <span class="category course-line">Arquitectura:</span>
+                    <span class="details">REST API Rest 2025</span>
+                </div>
+                
+                <!-- Bloque Infraestructura (El segundo queda vacío a la izquierda) -->
+                <div class="course-row">
+                    <span class="category course-line">Infraestructura:</span>
+                    <span class="details">Kubernetes Esencial 2025</span>
+                </div>
+                <div class="course-row">
+                    <span class="category"></span> <!-- Vacío: mantiene alineación sin repetir texto -->
+                    <span class="details">Docker Esencial 2025</span>
+                </div>
+                
+            </div>
+
+            <!-- Contenedor del botón con el espacio corregido -->
+            <div class="contenedor-boton-linkedin">
+                <div class="boton-enviar">
+                    <a href="https://www.linkedin.com/in/elena-á-aa80a281" target="_blank" rel="noopener noreferrer" class="boton-linkedin">
+                        Ver certificados en LinkedIn
+                    </a>
+                    <span class="overlay"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </section>
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
-            <h2>Proyectos</h2>
+                <h2>Proyectos Destacados</h2>
             <div class="galeria">
+                <!-- proyecto -->
                 <div class="proyecto">
                     <a href="#trabajo-1" class="portfolio-card">
-                    <img src="img/cukitos4.png" alt="landing page hotel cukitos">
+                    <img src="img/cukitonuevo.png" alt="landing page hotel cukitos">
                     <div class="overlay">
-                        <h3>Hotel y servicios para mascotas</h3>
-                        <h1> 2016 </h1>
+                        <h3>Web de servicios para mascotas</h3>
+                        <h3> Proyecto personal migrado</h3>
+                        <h3> 2015 - 2025</h3>
                     </div>
                     </a>
                 </div>
+                    <!-- proyecto -->
                 <div class="proyecto">
                     <a href="#trabajo-2" class="portfolio-card">         
-                    <img src="img/nutrilove2.png" alt="landing page dietario">
+                    <img src="img/nutrilove2.jpg" alt="landing page dietario">
                     <div class="overlay">
-                       <h3>App Dietario</h3>
-                        <h1>2023</h1>
+                        <h3>Web de nutrición y recetas</h3>
+                            <h3> Proyecto personal </h3>
+                        <h1>Angular 12 - 2023</h1>
                     </div>
                     </a>
                 </div>
+                    <!-- proyecto -->   
                 <div class="proyecto">
                     <a href="#trabajo-3" class="portfolio-card">
-                    <img src="img/fundae1.webp" alt="fundacion">
+                    <img src="img/bancorural2.jpg" alt="appbancaria">
                     <div class="overlay">
-                        <h3>Fondo de Reserva</h3>
-                        <h3>2024</h3>
-                       
+                        <h3>Web Bancaria </h3>
+                            <h3> Proyecto personal </h3>
+                        <p>Angular Moderno 2026</p>
                     </div>
                     </a>
                 </div>
+                    <!-- proyecto -->
                 <div class="proyecto">
                     <a href="#trabajo-4" class="portfolio-card">
-                    <img src="img/portafoliomodelo.png" alt="portafolio fotografico">
+                    <img src="img/cafeteria.jpg" alt="landing page">
                     <div class="overlay">
-                         <h3>Portafolio fotográfico 2018</h3>
-                        <p>Javascript Html Css MUURI</p>
+                        <h3>Cafeteria artesanal</h3>
+                        <h3> Proyecto personal </h3>
+                        <h1>Angular Moderno 2025 </h1>
                     </div>
-                    <!-- </a> -->
+                    </a>
                 </div>
-                <div class="proyecto">
+                
+            </div>
+            <!-- segundo apartado -->
+                <h2>Experiencia Profesional</h2>
+                <div class="galeria">
+                <!-- proyecto -->
+                
+                    <div class="proyecto">
                     <a href="#trabajo-5" class="portfolio-card">
-                    <img  src="img/viuca3.png" alt="ropa de mujer">
+                    <img src="img/tasvalor3.png" alt="landing page">
                     <div class="overlay">
-                       <h3>Tienda Online </h3>
-                        <h1>Proyecto fin de master Escuela de diseño Web </h1>
-                        <h1>2016</h1>
+                        <h3>Tasaciones y Arquitectura</h3>
+                            <h3> Proyecto  </h3>
                     </div>
                     </a>
                 </div>
                 <div class="proyecto">
                     <a href="#trabajo-6" class="portfolio-card">
-                    <img src="img/worpress.png" alt="blogg">
+                    <img src="img/fundae1.webp" alt="fundacion">
                     <div class="overlay">
-                        <h3>Blog de viajes 2014 </h3>
-                        <p>Wordpress</p>
+                        <h3>Fondo de Reserva</h3>
+                            <h3> Proyecto  </h3>
+                        
                     </div>
                     </a>
                 </div>
-                <div class="proyecto">
+                                    
+            </div>
+            <!-- tercer apartado -->
+                <h2>Otros Proyectos</h2>
+            <div class="galeria">
+                <!-- proyecto -->
+                    <div class="proyecto">
                     <a href="#trabajo-7" class="portfolio-card">
-                    <img src="img/tasvalor3.png" alt="landing page">
+                    <img src="img/portafoliomodelo.jpg" alt="portafolio fotografico">
                     <div class="overlay">
-                        <h3>Tasaciones y Arquitectura</h3>
-                      
+                            <h3>Portafolio fotográfico 2018</h3>
+                            <h3> Proyecto personal </h3>
+                        <p>Javascript Html Css MUURI</p>
+                    </div>
+                    <!-- </a> -->
+                </div>
+                <div class="proyecto">
+                    <a href="#trabajo-8" class="portfolio-card">
+                    <img  src="img/viucanuevo.jpg" alt="ropa de mujer">
+                    <div class="overlay">
+                        <h3>Tienda Online </h3>
+                        <h1>Proyecto fin de master Escuela de diseño Web </h1>
+                        <h1>2016</h1>
                     </div>
                     </a>
                 </div>
+            
                 <div class="proyecto">
-                  <a href="#trabajo-8" class="portfolio-card">
-                  <img src="img/docencia.png" alt="landing page">
-                  <div class="overlay">
-                      <h3>Pagina web de docencia </h3>
-                      <h1> 2025 </h1>
-                  </div>
-                  </a>
-                </div>
-                <div class="proyecto">
-                  <a href="#trabajo-9" class="portfolio-card">
-                  <img src="img/vitral3.jpg" alt="landing page">
-                  <div class="overlay">
-                      <h3>Cafeteria Las Violetas en desarrollo </h3>
-                      <h1> 2025 </h1>
-                  </div>
-                  </a>
+                    <a href="#trabajo-9" class="portfolio-card">
+                    <img src="img/docencia.jpg" alt="landing page">
+                    <div class="overlay">
+                        <h3>Pagina web de docencia </h3>
+                        <h3> Proyecto para el curso del certificado SSCE0110 de docencia</h3>
+                        <h1> 2025 </h1>
+                    </div>
+                    </a>
                 </div>
                 
             </div>
+        <!-- cuarto apartado -->
+                <h2>UI Maquetacion y diseños</h2>
+            <div class="galeria">
+                <!-- proyecto -->
+                <div class="proyecto">
+                    <a href="#trabajo-11" class="portfolio-card">
+                        <div class="imagenui" >
+                        </div> 
+                        <div class="overlay">
+                            <h3>Landing Page Peluqueria Barberia</h3>
+                            <p>Javascript Html Css</p>
+                        </div>
+                    </a> 
+                </div>
+                
             </div>
+
         </div>
     </section>
-
-<article class="modal" id="trabajo-1">
+        
+    <!-- Articles  -->
+    <article class="modal" id="trabajo-1">
     <div class="modal-content">
-      <a href="#cerrar" class="modal-close">
-        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
-          <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+        <a href="#cerrar" class="modal-close">
+        <svg xmlns="http://w3.org" width="54" height="54" viewBox="0 0 54 54">
+            <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
         </svg>
-      </a>
-      <article class="portfolio-modal">
-        <video style="margin-left: 50px" controls muted autoplay loop controlsList="nodownload" oncontextmenu="return false"
-         width="480" height="320" poster="img/cukitos.png"> 
-              <source src="img/cukitosshort.mp4" type="video/mp4" />
-              <img src="img/cukitos.png" alt="Video no soportado" />
-               
-        </video>
-       
-        <div class="portfolio-info">
-          <h3>Landing Page de Negocio</h3>
-          <p>Angular 2/4 | Rxjs | Typescript | Javascript | ApiRestful</p>
-          <p>Construcción de componentes reutilizables y modulares con Lazy loading</p>
-        </div> 
-      </article>
-    </div>
-</article>
-<article class="modal" id="trabajo-2">
-    <div class="modal-content">
-      <a href="#cerrar" class="modal-close">
-        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
-          <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
-        </svg>
-      </a>
-      <article class="portfolio-modal">
-         <video style="margin-left: 50px" controls muted autoplay loop controlsList="nodownload"
-          width="480" height="320" poster="img/nutrilovega.png">
-              <source src="img/nutrilovepage.mp4" type="video/mp4" />
-              <img src="img/nutrilovega.png" alt="Video no soportado" />
-          </video> 
-       
-       <div class="portfolio-info">
-          <h3>Landing Page de Negocio</h3>
-          <p>Html5 | Javascript | Bootstrap | Angular material | Angular 12 |Typescript</p>
-          <p>Creación de dietas a medida y recetas especiales </p>
-       </div>
-      </article>
-    </div>
-</article>
-<article class="modal" id="trabajo-3">
-    <div class="modal-content">
-      <a href="#cerrar" class="modal-close">
-        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
-          <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
-        </svg>
-      </a>
-      <article class="portfolio-modal">
-        <img style="margin-left: 150px" src="img/fundae2.webp" alt="página web">
-        <div class="portfolio-info">
-          <h3>Aplicación moderna y accesible orientada a facilitar la navegación y el acceso a cursos de formación</h3>
-          <p>Html5 | Css| Boostrap | Angular 16 | Ngx | Git | Rxjs | Javascript</p>
-          <p> Construcción de componentes reutilizables y modulares<br>
-              Integración con servicios para el manejo de datos en tiempo real<br>
-              Implementación de formularios dinámicos con validación<br>
-              Aplicación de estilos personalizados con SCSS<br>
-              Pruebas funcionales para asegurar rendimiento y usabilidad<br>
-          </p>
-          
-        </div>
-      </article>
-    </div>
-</article>
-
-<article class="modal" id="trabajo-5">
-    <div class="modal-content">
-      <a href="#cerrar" class="modal-close">
-        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
-          <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
-        </svg>
-      </a>
-      <div class="modalin">
+        </a>
+        
         <article class="portfolio-modal">
-          <video style="margin-left: 50px" controls muted autoplay loop controlsList="nodownload" controlsList="nodownload"
-          width="480" height="320" poster="img/viucage.JPG">
-                <source src="img/viucanew.mp4" type="video/mp4" />
-                <img src="img/viucapage.JPG" alt="Video no soportado" />
-                <img  src="img/viucage.JPG" alt="ropa de mujer">
-          </video>
-          <div class="portfolio-info">
-            <h3>Tienda online de ropa para mujer</h3>
-            <p>Html5 | Css | Javascript| Php | Mysql | Apache </p>
-          </div>
-        </article>
-      </div>
-      
- 
-    </div>
-</article>
-
-<article class="modal" id="trabajo-7">
-    <div class="modal-content">
-      <a href="#cerrar" class="modal-close">
-        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
-          <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
-        </svg>
-      </a>
-      <article class="portfolio-modal">
-        <div class="portfolio-info">
-          <h3>Landing Page de Negocio </h3>
-          <p>Php | Angular 2 | Css | Javascript | Mysql</p>
-          <aside class="portfolio-details">
-            <small><b>Web:</b></small>
-            <small><a href="https://arquitectura.tasvalor.com/" target="_blank" rel="noopener"> Arquitectura y Tasaciones</a></small>
-          </aside>
-                   
+        <h3>App para mascotas rediseñada (evolución técnica)</h3>
+        <!-- BOTÓN ÚNICO DINÁMICO (Cambia de texto con JS) -->
+        <div style="margin-bottom: 20px;">
+            <span class="boton-netlify-position">
+                <button id="toggle-tab-btn" onclick="toggleViews()" class="boton-netlify btn-original" >
+                Versión Original 
+            </button>
+            </span>
+            
         </div>
-      </article>
-    </div>
-</article>
-<article class="modal" id="trabajo-8">
-  <div class="modal-content">
-    <a href="#cerrar" class="modal-close">
-      <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
-        <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
-      </svg>
-    </a>
-    <article class="portfolio-modal">
-      <img style="margin-left: 150px"  src="img/gatogafas.jpg" alt="recursos didacticos" />
-      <div class="portfolio-info">
-        <h3>Página Web docencia</h3>
-        <p>Demos y recursos didácticos para los alumnos</p>
-        <aside class="portfolio-details">
-            <small><b>Web:</b></small>
-            <small><a href="https://sites.google.com/view/elenapazprofe/inicio?authuser=0" target="_blank" rel="noopener">Visita mi página web</a></small>
-      </div>
-    </article>
-  </div>
-</article> 
 
-<!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>Contacto</h2>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col" >
-                    
-                   <h3>Si deseas contactar...</h3>
-                    <a href="mailto:blogelena846@gmail.com?Subject=Información%20de%20Diseño%20Web">
-                    <button class="btn" type="submit" value="ENVIAR MENSAJE">
-                            Enviar Email<i class="fa-solid fa-paper-plane"></i>
-                            <span class="overlay"></span>
-                    </button>
-                  </a>
-                </div>
+        <!-- VISTA 1: VERSIÓN NUEVA (Se muestra por defecto) -->
+        <div id="version-nueva" class="tab-content">
+            <p>Mantenimiento evolutivo con cambio de accesibilidad, modernización de estilo y optimización de rendimiento.</p>
+            
+            <span class="boton-netlify-position">
+                <a target="_blank" class="boton-netlify boton-disa" >
+                🌐 Demo próximamente
+                </a>
+            </span>
+        </div>
+
+        <!-- VISTA 2: VERSIÓN VIEJA (Oculta al principio) -->
+        <div id="version-vieja" class="tab-content" style="display: none;">
+            <p style="margin-bottom: 15px;"><strong>Stack Original (Legacy):</strong> Angular 2/4 | Rxjs | Typescript | Javascript | Bootstrap 4 | ApiRestful | Componentes reutilizables con Lazy loading.</p>
+            
+        
+            <div style="display: flex; justify-content: center; width: 100%; margin: 0 auto;">
+                <iframe 
+                src="https://www.canva.com/design/DAHQNqllkEs/-KTtIWIsxGPQUFZMoH08Jw/view?embed"
+                allowfullscreen="allowfullscreen" allow="fullscreen"
+                style="width: 100%; max-width: 450px; height: 450px; border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" 
+                allowfullscreen 
+                allow="fullscreen">
+                </iframe>
             </div>
+        
         </div>
+
+        </article>
+    </div>
+    </article>
+
+    <article class="modal" id="trabajo-2">
+        <div class="modal-content">
+        <a href="#cerrar" class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+            <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+            </svg>
+        </a>
+        <article class="portfolio-modal">
+            <video style="margin-left: 50px" controls muted autoplay loop controlsList="nodownload"
+            width="480" height="320" poster="img/nutrilovega.png">
+                <source src="img/nutrilovepage.mp4" type="video/mp4" />
+                <img src="img/nutrilovega.png" alt="Video no soportado" />
+            </video> 
+        
+        <div class="portfolio-info">
+            <h3>Proyecto de web de nutricion</h3>
+            <p>Javascript | Bootstrap 4 | Angular material12 | Angular 12 |Typescript</p>
+            <p>Implementación de Angular Material en un proyecto Angular para crear una mejor experiencia de usuario. </p>
+        </div>
+        </article>
+        </div>
+    </article>
+
+    <article class="modal" id="trabajo-3">
+    <div class="modal-content">
+        <a href="#cerrar" class="modal-close">
+        <svg xmlns="http://w3.org" width="54" height="54" viewBox="0 0 54 54">
+            <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+        </svg>
+        </a>
+        
+        <article class="portfolio-modal">
+        <h3>Proyecto de web bancaria con Angular Moderno</h3>
+           
+        <div class="portfolio-info">
+            
+            <ul style="text-align: left; padding-left: 20px; line-height: 1.6; margin-bottom: 20px;">
+            <p>Jest | TailwindCSs Grid | Angular 20 |Typescript</p>
+            <li><strong>Objetivo:</strong>Diseño de interfaz responsive, optimización del rendimiento.</li>
+            <li><strong>Funcionalidad:</strong>Aplicativo bancario donde el cliente se loguea con tiempo de expiración accede a sus compras con tarjeta,
+                para autorizarlas y ser pagadas con su cargo en la tarjeta. Listado de compras autorizadas y descargar PDF de compras. </li>
+            <li><strong>Framework CSS:</strong>Tailwind + Grid.</li>
+            <li><strong>Estructura:</strong> 
+                Barra de navegación lateral, tarjeta resumen de movimientos del cliente, listado de compras para autorizar, listado de compras autorizadas para el pago, reporte en Pdf de compras realizadas.</li>
+            <li><strong>Características</strong>Componentes reutilizables.Código limpio y modular.Core Services.</li>
+            <li>Pruebas unitarias con Jest.</li>
+            </ul>
+            
+            <div class="imagen-centro">
+                <img src="img/bancoruralcompras.png" alt="Página web">
+            </div>
+                        
+            <span class="boton-netlify-position">
+            <a target="_blank" class="boton-netlify boton-disa" >
+            🌐 Demo próximamente
+            </a>
+            </span>
+        </div>
+   
+        </article>
+    </div>
+    </article>
+
+    <article class="modal" id="trabajo-4">
+        <div class="modal-content">
+        <a href="#cerrar" class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+            <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+            </svg>
+        </a>
+        <article class="portfolio-modal">
+        <div class="portfolio-info">
+            <h3>Web de una Cafetería y pasteleria Artesanal</h3>
+            <p>Flexbox CSS| RXJS | Angular Moderno |Typescript</p>           
+        <ul style="text-align: left; padding-left: 20px; line-height: 1.6; margin-bottom: 20px;">
+          <li><strong>Identidad Visual:</strong>Colores claros y acordes al negocio y marca.</li>
+          <li><strong>Funcionalidades:</strong>Filtros dinámicos para agilizar la navegación</li>
+          <li><strong>Estructura:</strong> Signals, RXJS, core services.</li>
+          <li><strong>UI/UX:</strong>Experiencia de usuario.</li>
+          <li><strong>Framework CSS:</strong>Css Flexbox.</li
+          <li><strong>Rendimiento:</strong>Angular moderna ligera, eficiente y 100% Responsive.</li>
+        </ul>
+           
+             <span class="boton-netlify-position">
+            <a target="_blank" class="boton-netlify boton-disa" >
+            🌐 Demo próximamente
+            </a>
+            </span>
+        </div>
+        </article>
+        </div>
+    </article>
+
+    <article class="modal" id="trabajo-6">
+        <div class="modal-content">
+        <a href="#cerrar" class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+            <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+            </svg>
+        </a>
+        <article class="portfolio-modal">
+            <img style="margin-left: 150px" src="img/fundae2.webp" alt="página web">
+            <div class="portfolio-info">
+            <h3>Aplicación moderna y accesible orientada a facilitar la navegación y el acceso a cursos de formación</h3>
+            <p>Html5 | Css| Boostrap | Angular 16 | Ngx | Git | Rxjs | Javascript</p>
+            <p> Construcción de componentes reutilizables y modulares<br>
+                Integración con servicios para el manejo de datos en tiempo real APIS<br>
+                Implementación de formularios dinámicos con validación<br>
+                Aplicación de estilos personalizados y mejoramiento front con SCSS<br>
+                Pruebas funcionales para asegurar rendimiento y usabilidad<br>
+            </p>
+            
+            </div>
+        </article>
+        </div>
+    </article>
+
+    <article class="modal" id="trabajo-8">
+        <div class="modal-content">
+        <a href="#cerrar" class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+            <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+            </svg>
+        </a>
+        <div class="modalin">
+            <article class="portfolio-modal">
+            <video style="margin-left: 50px" controls muted autoplay loop controlsList="nodownload" controlsList="nodownload"
+            width="480" height="320" poster="img/viucage.JPG">
+                    <source src="img/viucanew.mp4" type="video/mp4" />
+                    <img src="img/viucapage.JPG" alt="Video no soportado" />
+                    <img  src="img/viucage.JPG" alt="ropa de mujer">
+            </video>
+            <div class="portfolio-info">
+                <h3>Proyecto del master de Diseño Web de una tienda online de ropa para mujer</h3>
+                <p>Html5 | Css | Javascript| PHP | Mysql | MySQL </p>
+            </div>
+            </article>
+        </div>
+        
+        </div>
+    </article>
+
+    <article class="modal" id="trabajo-5">
+        <div class="modal-content">
+        <a href="#cerrar" class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+            <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+            </svg>
+        </a>
+        <article class="portfolio-modal">
+            <div class="portfolio-info">
+            <h3>App para Tasadores y Arquitectos</h3>
+            <h4>Mantenimiento evolutivo - mejora del codigo PHP</h4>
+            <h4>Resolución de incidencias y pruebas </h4>
+            <h4>Migración al CSS</h4>
+            <p>Php | Angular 2 | Css | Javascript | Mysql</p>
+            <aside class="portfolio-details">
+                <small><b>Web:</b></small>
+                <small><a href="https://arquitectura.tasvalor.com/" target="_blank" rel="noopener"> Arquitectura y Tasaciones</a></small>
+            </aside>
+                    
+            </div>
+        </article>
+        </div>
+    </article>
+    <article class="modal" id="trabajo-9">
+    <div class="modal-content">
+        <a href="#cerrar" class="modal-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+            <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+        </svg>
+        </a>
+        <article class="portfolio-modal">
+        <img style="margin-left: 150px"  src="img/gatogafas.jpg" alt="recursos didacticos" />
+        <div class="portfolio-info">
+            <h3>Página Web docencia</h3>
+           
+            <p>Html5 | Css </p>
+            <p>Demos y recursos didácticos para los alumnos</p>
+            
+            <span  class="boton-netlify-position">
+            <a href="https://sites.google.com/view/elenapazprofe/inicio?authuser=0" target="_blank" class="boton-netlify" >
+            🌐 Web 
+            </a>
+            </span>  
+        </div>
+        </article>
+    </div>
+    </article> 
+
+     <article class="modal" id="trabajo-11">
+        <div class="modal-content">
+        <a href="#cerrar" class="modal-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+            <path d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z"/>
+            </svg>
+        </a>
+        <article class="portfolio-modal">
+        <div class="portfolio-info">
+            <h3>Diseño de una App de Peluqueria.
+             El objetivo es simular una web profesional de negocio con diseño moderno, responsive y orientado a la experiencia de usuario.
+        </h3>
+        <ul style="text-align: left; padding-left: 20px; line-height: 1.6; margin-bottom: 20px;">
+          <li><strong>UI/UX:</strong> Experiencia de usuario y 100% responsive</li>
+          <li><strong>Framework CSS:</strong>Css Flexbox.</li>
+          <li><strong>Herramientas:</strong>
+        - HTML5
+        - CSS3
+        - Flexbox
+        - Responsive Design
+        </li>
+        </ul>
+            <span  class="boton-netlify-position">
+            <a href="https://peluqueria-sanchez.netlify.app" target="_blank" class="boton-netlify" >
+            🌐 Demo 
+            </a>
+        </span>
+        </div>
+        </article>
+        </div>
+    </article>
+<!-- SECCION CONTACTO -->
+    <section id="contacto" class="seccion-contacto">
+      <div class="seccion-formulario">
+         <h2>¿Hablamos?</h2>
+         <p>Envíame un mensaje.</p>
+
+        <form action="https://formsubmit.co/elepa2002@gmail.com" method="POST" class="formulario-contacto">
+        
+        <!-- Campos visibles para el usuario -->
+        <div class="grupo-campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="name" required placeholder="Ej. María García">
+        </div>
+
+        <div class="grupo-campo">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+        </div>
+
+        <div class="grupo-campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="message" rows="5" required placeholder="Cuéntame sobre tu proyecto..."></textarea>
+        </div>
+
+        <input type="hidden" name="_captcha" value="false">
+       
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/gracias.html">
+     
+        <button type="submit" class="boton-enviar"><strong>Enviar Mensaje</strong>
+            <span class="overlay"></span>
+        </button>
+        </form>
+      </div>  
+   
     </section>
 
     <!-- footer -->
@@ -501,6 +745,34 @@
         </a>
     </footer>
     <script src="script.js"></script>
+    <script>
+        function toggleViews() {
+        const nuevaDiv = document.getElementById('version-nueva');
+        const viejaDiv = document.getElementById('version-vieja');
+        const boton = document.getElementById('toggle-tab-btn');
+
+        if (nuevaDiv.style.display !== 'none') {
+            nuevaDiv.style.display = 'none';
+            viejaDiv.style.display = 'block';
+            boton.innerHTML = 'Versión Actual (Evolución)';
+        } else {
+      
+            nuevaDiv.style.display = 'block';
+            viejaDiv.style.display = 'none';
+            boton.innerHTML = 'Versión Original (Legacy)';
+        }
+        }
+        </script>
+
+        <script>
+        function switchTab(tabId) {
+        // Ocultar ambos contenidos
+        document.getElementById('version-vieja').style.display = 'none';
+        document.getElementById('version-nueva').style.display = 'none';
+        // Mostrar el seleccionado
+        document.getElementById(tabId).style.display = 'block';
+        }
+        </script>
 </body>
 
 </html>

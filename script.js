@@ -1,20 +1,35 @@
 let menuVisible = false;
 //Función que oculta o muestra el menu
 function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList ="";
-        menuVisible = false;
-    }else{
-        document.getElementById("nav").classList ="responsive";
-        menuVisible = true;
-    }
+  let nav = document.getElementById("nav");
+    // Alterna la clase para mostrar/ocultar el menú
+    nav.classList.toggle("responsive");
+
+    // if(menuVisible){
+    //     document.getElementById("nav").classList ="";
+    //     menuVisible = false;
+    // }else{
+    //     document.getElementById("nav").classList ="responsive";
+    //     menuVisible = true;
+    // }
 }
+
+// Busca el contenedor oscuro de fondo de tu modal
+const miModal = document.getElementById("tu-id-modal"); 
+
+miModal.addEventListener("click", function(event) {
+    // Si el usuario hace clic exactamente en el fondo (y no en el cuadro blanco de texto)
+    if (event.target === miModal) {
+        miModal.style.display = "none"; // O la función que uses para ocultarla
+    }
+});
 
 function seleccionar(){
     //oculto el menu una vez que selecciono una opcion
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
+
 //Funcion que aplica las animaciones de las habilidades
 function efectoHabilidades(){
     var skills = document.getElementById("skills");

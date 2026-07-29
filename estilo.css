@@ -5,7 +5,6 @@
   --semititle-color: rgb(167, 237, 246);
   --gray-light-color: rgb(243, 243, 243);
   --gray-color: rgb(204, 204, 204);
-  --gray-dark-color: rgb(102, 102, 102);
   --black-color: rgb(0, 0, 0);
   --title-color: rgb(51, 51, 51);
   --text-color: rgb(34, 34, 34);
@@ -15,6 +14,8 @@
   --font:'Roboto', sans-serif;
   --max-width: 1200px;
   --header-height: 4rem;
+  --first-color: rgb(62, 39, 35);
+
 }
 
 *{
@@ -26,10 +27,11 @@
 html{
     scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   overflow-x: hidden;
-  color: var(--text-color);
+  color: var(--first-color);
   font-family: var(--font);
   font-size: 16px;
   line-height: 1.6;
@@ -37,12 +39,16 @@ body {
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
+.toggle-tab-btn{
+    padding: 8px 16px;
+    cursor: pointer;
+}
 /* MENU */
 .contenedor-header{
     background: var(--gray-light-color);
     position:fixed;
     width: 100%;
-    height: 10vh;
+    max-height: 10vh;
     top: 0;
     left: 0;
     z-index: 1; 
@@ -65,7 +71,7 @@ h1, h2, h3 {
 }
 .contenedor-header header nav ul li a{
     text-align: none;
-    color: var(--black-color);
+    color: var(--first-color);
     margin: 0 20px;
     padding: 3px;
     transition: .5s;
@@ -86,66 +92,76 @@ h1, h2, h3 {
 }
 
 /* SECCION inicio */
-#inicio{
+.inicio{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     background-image:url("./img/pcescritorio.jpg");
-    background-position:left;
+    background-position:center center;
     background-size: cover;
     background-repeat: no-repeat;
     background-clip: content-box;
     background-attachment: fixed;
-   position:relative;
-   
+    position:relative;
+    display:flex;
+    justify-content:flex-start;
+    
 }  
-#inicio::before{
+.inicio::before{
     content: '';
     position:absolute;
-    background-color: rgb(167, 237, 246);
+    background-color:var(--semititle-color); 
     opacity: 0.4;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
 }
-#img1{
+/* .img1{
     width: 100%;
     height:100%;
     object-fit: cover;
-}
-.inicio .contenido-seccion{
+} */
+/* .inicio .contenido-seccion{
    width: 100%;
    height: 500px;
-    margin: 40px; 
+    margin: 40px; */ 
+
+ .inicio .contenido-seccion{
+    width: calc(100% - 80px);
+    margin: 40px;
 } 
-#inicio h3,h4{
+ 
+/* .inicio h3,h4{
+    font-family: var(--font);
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+} */
+.inicio h3,
+.inicio h4{
     font-family: var(--font);
     text-align: center;
     padding: 20px 0;
     position: relative;
 }
-#inicio{
-    display:flex;
-    justify-content:flex-start;
-    
-}
-#inicio .fila{
+
+.inicio .fila{
     display: flex;
     justify-content: flex-start;
-    position: absolute;
+    position: absolute; 
     z-index: 100; /* Un valor alto */
     
 }
 
-#inicio .fila .col .izq{
+.inicio .fila col .izq{
     width: 30%;
     
 }
 
-#inicio .fila .itemder{
-    width: 500px;
-    height: 200px;
+/* .inicio .fila .itemder{
+    min-width: 500px;
+    min-height: 200px;
     padding: 50px;
     margin-bottom: 30px;
     margin-top: 50px;
@@ -154,40 +170,54 @@ h1, h2, h3 {
     position: relative;
     border-radius: 50px 1000px / 150px;
     /* border-radius: 10px 100px / 120px; */
-} 
-#inicio .fila .itemder h3{
+/*}  */
+.itemder{
+    min-width: 500px;
+    min-height: 80px;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+    flex-direction: column;
+    
+    background-color: var(--semititle-color);
+    border-radius: 100px 100px / 100px;
+    /* border-radius: 10px 100px / 120px; */
+}
+.inicio .fila .itemder h3{
     padding: 10px;
     font-size: 30px;
     margin-left: 30px;
     text-align: center;
 }
-#inicio .fila .itemder h4{
+.inicio .fila .itemder h4{
     padding: 5px;
     font-size: 20px;
     margin-top: 10px;
     text-align: center;
 }
-#inicio .contenido-seccion .about{
+.inicio .contenido-seccion .about{
     font-size: 11px;
     display: block;
     margin-left: 120px;
     padding: 50px 20px;
 }
-#inicio .contenido-seccion .about h3{
+.inicio .contenido-seccion .about h3{
     color:var(--semititle-color);
     margin-left: 12opx;
     padding: 50px 20px;
 }
-#inicio .fila .izquierda{
+/* .inicio .fila .izquierda{
     margin-right:60px;
-}
-#inicio .fila .izquierda img{
+} */
+.inicio .fila .izquierda img{
    width: 100%;
    height: auto;
    border-radius: 60px;
    border: 1px solid var(--semititle-color);
 }
-#inicio .fila .derecha{
+.inicio .fila .derecha{
     margin-left: 80px;
 }
 .sobremi{
@@ -200,7 +230,7 @@ h1, h2, h3 {
     margin: auto;
 }
 .sobremi h2{
-    font-size: 48px;
+    font-size:  2rem !important;
     font-family:var(--font);
     text-align: center;
     padding: 20px 0;
@@ -269,7 +299,7 @@ h1, h2, h3 {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid var(--white-color);
-    width: fit-content;
+    width: 100%;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
@@ -308,7 +338,7 @@ h1, h2, h3 {
     margin: auto;
 }
 .curriculum h2{
-    font-size: 48px;
+    font-size:  2rem !important;
     font-family: var(--font);
     text-align: center;
     padding: 20px 0;
@@ -325,8 +355,7 @@ h1, h2, h3 {
 .curriculum .fila .col h3{
     font-size: 28px;
     font-family: var(--font);
-    margin-bottom: 25px;
-    padding:50px;
+    padding-left:100px;
 }
 
 .curriculum .fila .item{
@@ -362,6 +391,7 @@ h1, h2, h3 {
 .curriculum .fila .der{
     border-left: 2px solid var(--semititle-color);
     margin-left: 20px;
+    
 }
 .curriculum .fila .item .conectori{
     height: 2px;
@@ -401,134 +431,210 @@ h1, h2, h3 {
     position: relative;
     bottom: 4px;
 }
-/* SECCION S K I L L S */
-.skills{
-    background: linear-gradient(135deg,var(--semititle-color), var(--gray-light-color));
-    color: var(--black-color);
-    padding: 50px 20px;
-    padding-bottom: 180px;
-}
-.skills .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-    margin-bottom:150px;
-}
-.skills h2{
-    font-size: 48px;
-    font-family: 'Righteous';
-    text-align: center;
-    padding: 20px 0;
-    margin-bottom: 50px;
-
-}
-.skills .fila{
-    display: flex;
-}
-.skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
-}
-.skills .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-}
-.skills .fila2{
-    margin-top: 30px;;
-    display: flex;
-}
-.skills .fila2 .col{
-    width: 80%;
-    padding: 0 20px;
-}
-.skills .fila2 .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
-    margin-bottom: 25px;
-}
-.skills .skill > span{
-    font-weight: bold;
+.tech-block {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #333333; 
 }
-.skills .skill .barra-skill{
-    height: 8px;
-    width: 80%;
-    background-color: #131517;
-    position: relative;
-    margin-bottom: 30px;
-}
-.skills .skill .progreso{
-    background-color: var(--semititle-color);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-}
-.skills .skill .barra-skill span{
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    background-color:var(--semititle-color);
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
+
+.tech-tags-container {
+    display: flex !important;         
+    flex-wrap: wrap !important;       
+    gap: 6px !important;              
+    width: 100% !important;           
+    margin-bottom: 15px;  
+}                
+.tech-tag {
+    display: inline-block !important;
+    white-space: nowrap !important;   
+    background-color: #f0f0f0;       
+    padding: 4px 8px;                 
+    border-radius: 4px;
     font-size: 14px;
 }
-.skills-grid {
-  max-width: 800px;
-  font-family: sans-serif;
+
+.curriculum .item.izq {
+    height: auto !important;          
+    padding-bottom: 15px !important;  
 }
 
-/* Cada Fila */
-.skill-row {
-  display: flex;       /* Activa Flexbox */
-  margin-bottom: 15px; /* Espacio entre filas */
+.tech-title {
+    color:var(--semititle-color)!important; 
+    font-weight: 900 !important; 
+    display: inline-block;
+    margin-right: 4px;
+    text-shadow: 0.5px 0 0 var(--semititle-color), -0.5px 0 0 var(--semititle-color), 0 0.5px 0 var(--semititle-color), 0 -0.5px 0 var(--semititle-color);
+    -webkit-text-stroke: 0.5px var(--semititle-color); 
 }
 
-/* Cada Celda (La clave de la alineación) */
-.skill-cell {
-  display: flex;       /* Alinea icono y texto internamente */
-  align-items: center; /* Centra verticalmente */
-  flex: 0 0 33.33%;    /* Fuerza a que cada celda ocupe exactamente un tercio */
-  box-sizing: border-box;
+
+.curriculum .item.izq, 
+.curriculum .item.der {
+    position: relative;
+    box-sizing: border-box;
+    height: 140px !important; 
+    margin-bottom: 35px !important; 
+    padding: 15px !important; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.tech-category {
+    color: var(--semititle-color) !important;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    display: block;
+    font-weight: bold; /* Dejamos el grosor estándar para que no fuerce la tipografía */
+}
+/* SECCION S K I L L S */
+.skills{
+    background-color: var(--gray-light-color);
+    color: var(--black-color);
+    padding: 50px 20px;
+}
+.titulo-principal {
+    text-align: center;
+    margin-bottom: 30px;
+    
 }
 
-/* Caja para el icono (para que el texto siempre empiece igual) */
-.skill-cell img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;  /* Espacio entre logo y nombre */
-  flex-shrink: 0;      /* Que no se deforme el logo */
+.skills .contenido-seccion {
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 0 40px; 
+    box-sizing: border-box;
 }
 
-/* Estilo del texto */
-.skill-name {
-  font-style: normal;
-  font-size: 14px;
-  color: #334155;
-  white-space: nowrap; /* Evita que el texto salte de línea */
+.skills .fila {
+    display: flex;
+    justify-content: center; 
+    gap: 80px; 
+    margin-top: 20px;
 }
 
-	
-	
+.skills .col h3 {
+    text-align: center;
+    margin-bottom: 15px;
+     font-size: 20px;
+    line-height: 18px;
+}
+
+.skills-grid-new {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(110px, 140px)); 
+    gap: 10px; 
+    justify-content: center; 
+}
+
+
+.skills .col {
+    flex: 1; 
+}
+
+.skill-item-new {
+    display: flex;
+    align-items: center; 
+    background-color: #f4f6f8; 
+    padding: 6px 10px; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%; 
+}
+
+
+.avatar-new {
+    width: 20px !important;
+    height: 20px !important;
+    object-fit: contain;
+    margin-right: 6px; 
+    flex-shrink: 0; 
+}
+
+
+.skill-item-new span {
+    font-size: 0.8rem; 
+    font-weight: 500;
+    color: #333333;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.avatar-new {
+    width: 22px !important;
+    height: 22px !important;
+    object-fit: contain;
+    margin-right: 8px; 
+}
+
+.skill-item-new span {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #333333; 
+}
+
+
+.courses-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+    margin-bottom: 35px; 
+}
+
+
+.course-row {
+    display: grid;
+    grid-template-columns: 140px 1fr; 
+    align-items: baseline; 
+    text-align: left;
+}
+
+/* Estilo para los títulos de la izquierda */
+.course-row .category {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para los cursos de la derecha */
+.course-row .details {
+    color: #555;
+}
+
+/* Contenedor para aislar el bloque del botón si fuera necesario */
+.contenedor-boton-linkedin {
+    display: block;
+    width: 100%;
+}     
+.course-line {
+    color: #444444;
+    padding-left: 10px;
+    border-left: 3px solid var(--semititle-color); 
+    
+}
+
 /* SECCION PORTFOLIO */
 .portfolio{
     background-color: var(--gray-light-color);
     color: var(--black-color);
     padding: 50px 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 .portfolio .contenido-seccion{
     max-width: 1100px;
-    margin: auto;
+
 }
 .portfolio h2{
-    font-size: 48px;
+    font-size:  2rem !important;
     font-family: var(--font);
     text-align: center;
     padding: 20px 0;
+    margin: 20px 20px;
 }
 .portfolio .galeria{
     display: flex;
@@ -547,8 +653,6 @@ h1, h2, h3 {
   
 }
 .portfolio .galeria .proyecto img{
-    /* width: 300px;
-    height: 300px; */
     display: block;
     object-fit:contain;
     padding:3px;
@@ -556,6 +660,21 @@ h1, h2, h3 {
     height:100%;
     object-fit: cover;
     border-radius: 20px;
+    
+}
+.imagenui{
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+     position: absolute;
+    top: 3px;
+    left: 3px;
+    background-size: cover; 
+    background-position: center;
+    background-position-x:15%;
+    background-repeat: no-repeat;
+    border-radius: 17px;
+    background-image: url(./img/uisanchezpeluqueros.png);
+    
 }
 .portfolio .galeria .proyecto .overlay{
     position: absolute;
@@ -633,8 +752,7 @@ h1, h2, h3 {
   height: auto;
   flex-direction: column;
   background-color: var(--gray-light-color);
-  /* background-color: var(--white-color); */
-  
+   
 }
 .portfolio-modal h3 {
   border-bottom: medium solid var(--semititle-color);
@@ -651,60 +769,83 @@ h1, h2, h3 {
   color: var(--semititle-color);
 }
 
+.imagen-centro {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.imagen-centro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 /* SECCION CONTACTO */
-.contacto{
-    background-color: var(--gray-dark-color);
-    color: var(--white-color);
-    padding: 50px 0;
+.seccion-contacto{
+    width: 100%;
+     background-color: var(--gray-light-color);
+    color: var(--black-color);
+    padding: 50px 20px;
 }
-.contacto .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
-}
-.contacto h2{
-    font-size: 48px;
+.seccion-contacto h2{
+    font-size:  2rem !important;
     font-family: var(--font);
     text-align: center;
-    padding: 20px 0;
 }
-.contacto .col h3{
-	font-size: 20px;
-	font-family: var(--font);
+.seccion-contacto p{
     text-align: center;
+}
+.seccion-formulario {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: var(--gray-light-color);
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background:rgba(167, 237, 246, 0.2);
+  padding: 30px;
+  border-radius: 8px;
   
 }
-.contacto .fila{
-    display: flex;
+
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
-.contacto .col{
-    width: 100%;
-    padding: 10px;
-    position: relative;
+
+.grupo-campo label {
+  font-weight: bold;
+  color: #333;
 }
-.contacto .col input{
-    display: block;
-    width: 100%;
-    padding: 18px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: var(--gray-light-color);
-    color: var(--white-color);
-    font-size: 18px;
+
+.grupo-campo input, 
+.grupo-campo textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
-.contacto button{
-    cursor: pointer;
+
+.boton-enviar {
+   cursor: pointer;
     background-color: transparent;
-    border: 2px solid var(--white-color);
+    border: 2px solid var(--semititle-color);
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: var(--white-color);
+    color: var(--black-color);
     position: relative;
     z-index: 10;
 }
-.contacto button .overlay{
+.boton-enviar .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -714,35 +855,47 @@ h1, h2, h3 {
     z-index: -1;
     transition: 1s;
 }
-.contacto button:hover .overlay{
+.boton-enviar:hover .overlay{
     width: 100%;
 }
-.contacto .col a{
-     text-decoration: none;
-}
-.contacto .col .info{
-    position: absolute;
-    top: 40%;
-    background-color: #252A2E;
-    padding: 20px;
-    max-width: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.contacto .col .info ul{
-    list-style: none;
-}
-.contacto .col .info ul li{
-    margin-bottom: 20px;
-}
-.contacto .col .info ul li i{
-    color: var(--semititle-color);
+.boton-netlify{
+    padding: 10px 15px;
+    background: #00AD9F;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
     display: inline-block;
-    margin-right: 20px;
 }
+.boton-disa{
+     padding: 10px 15px;
+    background: #5ca19b;
+    color: #e0e0e0;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.boton-netlify-position{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-original{
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+
+/* BOTON LINKEDIN */
+.boton-linkedin{
+    color:var(--black-color);
+}
+
 footer{
     background-color: var(--gray-light-color);
-    color: var(--white-color);
+    color: var(--black-color);
     padding: 50px 0 30px 0;
     text-align: center;
     position: relative;
@@ -778,8 +931,113 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+.contenido-seccion h2,
+h2.titulo-principal {
+    font-size: 2rem !important;
+    font-weight: 700;
+    letter-spacing: -0.5px; 
+    margin-bottom: 25px;
+    color: #111111; 
+    text-align: center;
+}
+
+.skills h3,
+.curriculum h3 {
+    font-size: 1.4rem !important;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #222222;
+}
+
+.curriculum h4 {
+    font-size: 1.15rem !important;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #111111;
+}
+
+.skill-item-new span,
+.role-desc,
+.casa {
+    font-size: 0.85rem !important; 
+}
+
+.skills .fila2 {
+    margin-top: 50px !important; 
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    margin-bottom: 50px !important;
+}
+
+.skills .fila2 .col {
+    max-width: 500px; 
+    width: 100%;
+}
+.skills .fila2 .col h3{
+    margin-bottom: 30px;
+}
+.skills .fila .col h3{
+    margin-bottom: 30px;
+}
+/* INTERLINEADO Y ESPACIADO DE LA LISTA DE CURSOS */
+.courses-compact-list,
+.compact-courses-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+    margin-top: 15px;
+}
+
+.course-line,
+.course-inline {
+    font-size: 0.85rem !important;
+    color: #444444;
+    padding-left: 10px;
+    border-left: 3px solid var(--semititle-color); 
+    line-height: 1.5 !important;
+}
+
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
+   
+.modal-content {
+    position: relative; 
+    padding-top: 50px !important;
+}
+
+.modal-close {
+    position: absolute !important;
+    top: 15px;
+    right: 15px;
+    display: inline-block;
+    z-index: 99999;
+}
+
+.modal-close svg {
+    width: 32px !important;  
+    height: 32px !important;
+    fill: var(--semititle-color);
+}
+.modal-content {
+        width: 90% !important;     
+        max-height: 80vh !important; 
+        margin: 10% auto !important; 
+        overflow-y: auto !important; 
+        padding-top: 60px !important; 
+    }
+    .modal-close {
+        position: absolute !important;
+        top: 15px !important;
+        right: 15px !important;
+        z-index: 999999 !important;
+    }
+    
+    .modal-close svg {
+        width: 30px !important; 
+        height: 30px !important;
+    }
+    
     nav{
         display: none;
     }
@@ -791,7 +1049,7 @@ footer .arriba{
         position: absolute;
         right: 0;
         top: 75px;
-        background-color: #252A2E;
+        background-color:var(--semititle-color);
         width: 180px;
     }
     nav.responsive ul{
@@ -801,8 +1059,59 @@ footer .arriba{
         border-bottom: 1px solid var(--white-color);
         padding: 10px 0;
     }
+
+
+#nav.responsive ul {
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto !important; 
+}
+
+#nav.responsive ul li a {
+    display: block;
+    width: 100%;    
+    position: relative;
+    z-index: 10000 !important;
+}
+
 }
 @media screen and (max-width:700px){
+    
+.modal-content {
+    position: relative; 
+    padding-top: 50px !important; 
+}
+
+.modal-close {
+    position: absolute !important;
+    top: 15px;
+    right: 15px;
+    display: inline-block;
+    z-index: 99999;
+}
+
+.modal-close svg {
+    width: 32px !important;  
+    height: 32px !important;
+     fill: var(--semititle-color);
+}
+
+      .inicio {
+        height: 100vh; 
+        background-position: center top; 
+    }
+
+    .inicio h1 {
+        font-size: 28px;
+        text-align: center;
+        padding: 0 20px; 
+    }
+    .itemder {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;
+}
     .sobremi .fila{
         display: block;
     }
@@ -815,20 +1124,31 @@ footer .arriba{
     }
     .skills .fila .col{
         width: 100%;
+        
     }
     .skills .fila .col .barra-skill{
         width: 100%;
     }
 
-    .curriculum .fila{
-        display: block;
+
+    .curriculum .fila {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
     }
-    .curriculum .fila .col{
-        width: 90%;
+
+    .curriculum .fila .col {
+        width: 100%; 
+        margin: 0; 
+        padding: 10px 0;
     }
-    .curriculum .fila .derecha{
-        margin-left: 20px;
+
+    .curriculum .fila .derecha {
+        margin-left: 0; 
+        margin-top: 30px; 
     }
+    
 
     .portfolio .galeria{
         display: block;
@@ -846,5 +1166,149 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+     .course-row {
+        grid-template-columns: 1fr; /* Pasa de 2 columnas a 1 sola columna */
+        gap: 4px; 
+        margin-bottom: 8px; 
+    }
+
+    .course-row .category {
+        font-size: 14px; 
+        color: #007bff; 
+    }
+}
+/* IPAD MINI */
+@media (min-width: 601px) and (max-width: 1024px){
+    
+.modal-content {
+    position: relative;
+    padding-top: 50px !important; 
 }
 
+.modal-close {
+    position: absolute !important;
+    top: 15px;
+    right: 15px;
+    display: inline-block;
+    z-index: 99999;
+}
+
+.modal-close svg {
+    width: 32px !important;  
+    height: 32px !important;
+     fill: var(--semititle-color);
+}
+     
+    .inicio .itemder {
+        background: transparent !important;
+        border-radius: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        position: absolute !important;
+        top: 20px !important;
+        left: 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .inicio .itemder h3 {
+        font-size: 1.6rem !important;
+        margin: 0 0 8px 0 !important;
+        display: inline-block !important;
+        border-bottom: 4px solid  var(--semititle-color)!important; 
+        padding-bottom: 4px !important;
+       
+    }
+
+    /* Estilo del rol */
+    .inicio .itemder h4 {
+        font-size: 1rem !important;
+        margin: 0 !important;
+        font-weight: normal !important;
+    }
+   
+}
+
+/* Media query específica para teléfonos móviles IPHONE SX PRO  SE PIXEL7 GALAXY ZFOLDER GALAXY */
+@media (max-width: 480px) {
+.modal-content {
+    position: relative; 
+    padding-top: 50px !important; 
+}
+
+
+.modal-close {
+    position: absolute !important;
+    top: 15px;
+    right: 15px;
+    display: inline-block;
+    z-index: 99999;
+}
+
+.modal-close svg {
+    width: 32px !important;  
+    height: 32px !important;
+     fill: var(--semititle-color);
+}
+.modal-content {
+        width: 90% !important;     
+        max-height: 80vh !important; 
+        margin: 10% auto !important; 
+        overflow-y: auto !important; 
+        padding-top: 60px !important; 
+    }
+    .modal-close {
+        position: absolute !important;
+        top: 15px !important;
+        right: 15px !important;
+        z-index: 999999 !important;
+    }
+    
+    .modal-close svg {
+        width: 30px !important; 
+        height: 30px !important;
+    }
+    .skills .fila2 .col h3{
+     line-height: 1.4 !important; 
+        letter-spacing: normal !important; 
+    }
+      
+    .inicio .itemder {
+        background: transparent !important;
+        border-radius: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        position: absolute !important;
+        top: 20px !important;
+        left: 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .inicio .itemder h3 {
+        font-size: 1.6rem !important;
+        margin: 0 0 8px 0 !important;
+        display: inline-block !important;
+        border-bottom: 4px solid  var(--semititle-color)!important; 
+        padding-bottom: 4px !important;
+    }
+
+    /* Estilo del rol */
+    .inicio .itemder h4 {
+        font-size: 1rem !important;
+        margin: 0 !important;
+        font-weight: normal !important;
+    }
+  .skills .fila .col{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
