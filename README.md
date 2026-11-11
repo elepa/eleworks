@@ -5,7 +5,7 @@
 Aquí encontrarás una selección de proyectos web que he desarrollado utilizando tecnologías como: 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,js,html,css,php,Angular" />
+    <img src="https://skillicons.dev/icons?i=git,js,html,css,php,Java,Angular" />
   </a>
 </p>
  
